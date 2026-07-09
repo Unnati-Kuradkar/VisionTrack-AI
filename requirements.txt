@@ -1,0 +1,10 @@
+streamlit
+numpy
+Pillow
+torch
+torchvision
+opencv-python-headless
+supervision
+rfdetr
+streamlit-webrtc
+av

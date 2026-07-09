@@ -1,0 +1,66 @@
+.fade-in {
+    animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.live-status {
+    color: green;
+    font-weight: bold;
+    text-align: center;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
+
+.live-status {
+    text-align: center;
+    color: green;
+    font-weight: bold;
+}
+
+.camera-card {
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+}
+
+.stVideo {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+}
+
+.info-card {
+    padding: 15px 25px;
+    border-radius: 15px;
+    background: #f8f9fa;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+    margin-top: 15px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    margin-bottom: 0px !important;
+}
+
+p {
+    margin-top: 0px !important;
+    margin-bottom: 10px !important;
+}
