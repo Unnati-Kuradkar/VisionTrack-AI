@@ -1,156 +1,211 @@
-##VisionTrack AI
+# DailyBriefAI – AI-Powered News Summarization and Current Affairs Platform
 
-Author: Unnati Kuradkar
-Affiliation: MCA Student
-Date: July 2026
+**Author:** Unnati Kuradkar  
+**Affiliation:** MCA Student  
+**Date:** July 2026
 
-#Abstract
+---
 
-VisionTrack AI is a real-time object detection and tracking system that utilizes the RF-DETR Nano model to identify and classify objects from a live webcam feed. The application provides instant visual feedback through bounding boxes, object labels, and live object counting. By combining advanced computer vision techniques with an interactive Streamlit dashboard, the system enables efficient monitoring and analysis of objects in real time.
+# Abstract
 
-#Introduction
+This repository presents **DailyBriefAI**, an AI-powered news aggregation and current affairs platform that automatically collects news from RSS feeds, generates concise summaries using Artificial Intelligence, and organizes articles into meaningful categories. The system helps users stay informed efficiently while also providing educational features such as quizzes, UPSC notes, revision materials, bookmarks, PDF reports, and an AI chatbot. By combining Natural Language Processing (NLP) with modern web technologies, DailyBriefAI transforms large volumes of news into easily consumable and exam-oriented content.
 
-Computer Vision has become a key area of Artificial Intelligence, enabling machines to understand and interpret visual information from the world. Real-time object detection is widely used in surveillance, smart monitoring, autonomous systems, retail analytics, and industrial automation.
+---
 
-The VisionTrack AI project was developed to demonstrate the practical implementation of modern object detection models using live video streams. The system processes webcam footage in real time, detects multiple objects simultaneously, and displays detection results through an intuitive user interface.
+# Introduction
 
-#Literature Review
+In today's information-driven world, users are exposed to thousands of news articles daily. Reading and understanding all available information is both time-consuming and challenging. Traditional news portals often provide lengthy articles without offering concise insights or learning-oriented features.
 
-Traditional object detection algorithms such as Haar Cascades and HOG-based detectors provided basic object recognition capabilities but struggled with accuracy and scalability.
+DailyBriefAI was developed to address this challenge by automatically collecting news from trusted RSS sources and generating AI-powered summaries. The platform enables users to access important current affairs quickly while also supporting competitive exam preparation through quizzes, notes, and revision content. The system serves as a unified platform for both news consumption and knowledge enhancement.
 
-Modern deep learning-based models including:
+---
 
-R-CNN
-Fast R-CNN
-Faster R-CNN
-YOLO (You Only Look Once)
-DETR (Detection Transformer)
+# Literature Review
 
-have significantly improved object detection performance.
+Traditional news aggregation platforms primarily focus on collecting and displaying articles from various sources. While effective in information delivery, these systems lack intelligent content processing and educational support.
 
-RF-DETR (Real-Time Fine-tuned Detection Transformer) combines transformer-based architectures with optimized detection pipelines, offering high accuracy while maintaining real-time performance.
+Recent advancements in Artificial Intelligence, Natural Language Processing (NLP), and Large Language Models (LLMs) have enabled automatic text summarization, content classification, and intelligent question generation.
 
-#Methodology
-1. Video Capture
+Technologies commonly used in modern intelligent news systems include:
 
-The system captures live video frames from the user's webcam using WebRTC.
+- Natural Language Processing (NLP)
+- Machine Learning Algorithms
+- Large Language Models (LLMs)
+- AI-based Text Summarization
+- Information Retrieval Systems
+- News Recommendation Systems
 
-2. Frame Processing
+Google Gemini API provides advanced language understanding and summarization capabilities, making it suitable for building intelligent news processing applications.
 
-Each frame is resized and optimized for efficient inference.
+---
 
-3. Object Detection
+# Methodology
 
-The RF-DETR Nano model analyzes incoming frames and identifies objects present in the scene.
+## 1. News Collection
 
-4. Object Classification
+News articles are automatically fetched from RSS feeds of trusted news publishers.
 
-Detected objects are assigned class labels such as:
+## 2. Data Processing
 
-Person
-Clock
-Chair
-Laptop
-Bottle
-Cell Phone
+Collected news content is cleaned, formatted, and prepared for AI processing.
 
-and many more supported classes.
+## 3. AI Summarization
 
-5. Visualization
+The Gemini API generates concise summaries that capture the key information from lengthy articles.
 
-Detected objects are highlighted using:
+## 4. Category Classification
 
-Bounding Boxes
-Class Labels
-Live Object Count Overlay
-6. Dashboard Display
+Articles are classified into categories such as:
 
-Results are displayed through an interactive Streamlit dashboard for real-time monitoring.
+- Politics
+- Business
+- Technology
+- Sports
+- General
 
-Implementation
-Programming Language
-Python
-Frameworks & Libraries
-Streamlit
-Streamlit-WebRTC
-OpenCV
-RF-DETR
-Supervision
-AV
-Tools Used
-Visual Studio Code
-GitHub
-Streamlit
-Results and Discussion
-Achievements
+## 5. Database Storage
 
-✅ Real-time webcam object detection
+Processed articles and metadata are stored in an SQLite database for efficient retrieval.
 
-✅ Multiple object recognition
+## 6. User Interaction
 
-✅ Bounding box visualization
+Users can browse, search, bookmark, and download summarized news content.
 
-✅ Class label display
+## 7. Learning Features
 
-✅ Live object counting overlay
+The platform generates:
 
-✅ Interactive dashboard interface
+- UPSC Notes
+- Daily Quizzes
+- MCQs
+- Weekly Revision Material
+- Monthly Magazine Reports
 
-Sample Detection Output
+This integrated workflow provides both information access and educational support.
 
-The system successfully detects objects such as:
+---
 
-Person
-Clock
-Chair
-Laptop
-Mobile Phone
+# Implementation
 
-with real-time visual feedback.
+## Programming Languages
 
-Screenshots / Demo
-Live Webcam Feed
-Object Detection Dashboard
-Real-Time Detection Results
-Object Count Overlay
-Limitations
-Detection accuracy depends on lighting conditions.
-Small or partially visible objects may not be detected accurately.
-Performance varies depending on system hardware.
-RF-DETR inference may be slower on low-end devices without GPU support.
-Future Scope
-Enhanced Tracking
+- Python
+- HTML
+- CSS
+- JavaScript
 
-Integrate advanced object tracking algorithms such as ByteTrack or DeepSORT.
+## Frameworks / Libraries
 
-Analytics Dashboard
+- Flask
+- SQLite
+- Feedparser
+- Google Gemini API
+- Requests
+- BeautifulSoup
 
-Generate object detection reports and statistics.
+## Tools Used
 
-Multi-Camera Support
+- Visual Studio Code
+- GitHub
+- SQLite Database
 
-Monitor multiple video streams simultaneously.
+---
 
-Cloud Deployment
+# Results and Discussion
 
-Deploy the application on cloud platforms for remote access.
+## Achievements
 
-Alert System
+✅ Live News Collection using RSS Feeds
 
-Implement real-time notifications when specific objects are detected.
+✅ AI-Powered News Summarization
 
-Custom Object Detection
+✅ Category-wise News Organization
 
-Train the model on custom datasets for domain-specific applications.
+✅ Search Functionality
 
-#Conclusion
+✅ Bookmark Management
 
-VisionTrack AI demonstrates the practical application of Artificial Intelligence and Computer Vision in real-time object detection. By leveraging the RF-DETR Nano model, Streamlit, and OpenCV, the system provides accurate object recognition and visualization through an easy-to-use dashboard. The project showcases the potential of modern AI technologies for intelligent monitoring and real-world automation solutions.
+✅ AI Chatbot Integration
 
-#References
-RF-DETR Documentation – https://github.com/roboflow/rf-detr
-OpenCV Documentation – https://opencv.org/
-Streamlit Documentation – https://streamlit.io/
-Supervision Documentation – https://supervision.roboflow.com/
-Carion et al., "End-to-End Object Detection with Transformers (DETR)," Facebook AI Research, 2020.
-Roboflow Computer Vision Resources – https://roboflow.com/
+✅ PDF Report Generation
+
+✅ Weekly Revision Module
+
+✅ Monthly Magazine Generation
+
+✅ UPSC Notes Creation
+
+✅ MCQ Test Generation
+
+✅ Daily Quiz Feature
+
+✅ Catch-Up Module
+
+✅ Analytics Dashboard
+
+✅ Dark Mode Interface
+
+The platform successfully collects and processes news articles while providing AI-generated summaries and educational resources. Users can quickly access current affairs content and prepare for competitive examinations using a single integrated dashboard.
+
+---
+
+# Limitations
+
+- AI summarization depends on Gemini API availability and quotas.
+- RSS feed availability relies on external news providers.
+- Category classification accuracy may vary for complex or ambiguous articles.
+- Internet connectivity is required for news collection and AI processing.
+- Free-tier API limitations may restrict large-scale summarization requests.
+
+---
+
+# Future Scope
+
+## Personalized Recommendations
+
+Recommend articles based on user interests and reading history.
+
+## User Authentication
+
+Support personalized accounts and saved preferences.
+
+## Voice Summaries
+
+Convert AI-generated summaries into audio format.
+
+## Mobile Application
+
+Develop Android and iOS versions of the platform.
+
+## Multi-Language Support
+
+Generate summaries in regional and international languages.
+
+## Cloud Deployment
+
+Deploy the system on cloud platforms for global accessibility.
+
+## Advanced Analytics
+
+Provide user engagement statistics and reading behavior insights.
+
+---
+
+# Conclusion
+
+DailyBriefAI demonstrates the practical application of Artificial Intelligence, Natural Language Processing, and Web Development in modern news aggregation systems. By integrating RSS-based news collection, AI-powered summarization, educational tools, and analytics, the platform provides an efficient and intelligent solution for news consumption and competitive exam preparation. The project showcases how AI can simplify information overload and improve learning experiences for students and professionals alike.
+
+---
+
+# References
+
+1. Google Gemini API Documentation
+2. Flask Documentation
+3. SQLite Documentation
+4. Feedparser Documentation
+5. Python Official Documentation
+6. RSS Feed Standards Documentation
+7. Natural Language Processing Research Papers
+8. Google AI Developer Resources
+9. News Aggregation Systems Research Literature
+10. AI-Based Text Summarization Research Papers
