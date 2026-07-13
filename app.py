@@ -177,15 +177,15 @@ with col1:
         unsafe_allow_html=True
     )
 
-    ctx = webrtc_streamer(
-        key="visiontrack",
-        video_processor_factory=VideoProcessor,
-        media_stream_constraints={
-            "video": True,
-            "audio": False
-        },
-        async_processing=False
-    )
+    #ctx = webrtc_streamer(
+        #key="visiontrack",
+        #video_processor_factory=VideoProcessor,
+        #media_stream_constraints={
+            #"video": True,
+            #"audio": False
+        #},
+        #async_processing=False
+    #)
 
 with col2:
 
